@@ -151,7 +151,7 @@ IntArray::IntArray(const IntArray& other) {
     data = new int[capacity];   // allocate NEW memory
     for (int i = 0; i < count; i++)
     data[i] = other.data[i]; // copy each element
-
+    Tracker::objectCreated();
 }
 
 // Copy Assignment Operator
